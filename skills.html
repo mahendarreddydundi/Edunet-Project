@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(181, 177, 177);
+}
+header {
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 2em 0;
+    position: relative;
+}
+.header-content h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+.profile-pic {
+    width:120px;
+            height:120px;
+            border-radius: 75%;
+            object-fit: cover;
+            position: absolute;
+            top: 30px;
+            left:100px;
+            border: 3px solid #ffffff;
+    
+}
+nav {
+    background-color: #444;
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    padding: 15px 15px;
+}
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: rgb(13, 141, 188);
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+nav ul li a:hover {
+    color: #ff6347;
+}
+.section-content {
+    background-color: rgb(130, 171, 188);
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+.section-content h2 {
+    font-size: 2rem;
+    margin-top: 0;
+}
+.section-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skills-section, .courses-section {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.skills-section .edu-image, .courses-section .courses-image {
+    margin-left: 20px;
+}
+.skills-image img, .courses-image img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+#contact {
+            background: url('contact-bg.jpg') no-repeat center center/cover;
+            color: rgb(151, 31, 31);
+            margin: 1rem 0;
+            padding: 1rem;
+            border-radius: 8px;
+        }
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+dl dt {
+    padding: 5px 5px;
+}
+dl dd {
+    padding: 5px 5px;
+}
+    </style>
+</head>
+<body>
+<header>
+    <div class="header-content">
+        <img src="photo.jpg" alt="profile pic" class="profile-pic">
+        <h1>Mahendar Reddy Dundi</h1>
+        <p>Core Skills for Front-End Developers
+        </p>
+    </div>
+</header>
+<nav>
+    <ul>
+        <li><a href="profile.html">About</a></li>
+        <li><a href="education.html">Education</a></li>
+        
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href=skills.html>Skills</a></li>
+       
+    </ul>
+</nav>
+<section id="skills">
+    <div class="skills-container">
+        <div class="skills-section">
+            <div class="section-content">
+            
+                <h2>SKILLS</h2>
+                <dl>
+                    <dt><b>C Language</b></dt>
+                    <dd></dd>
+                    <dt><b>c++</b></dt>
+                    <dd></dd>
+                    <dt><b>Web Technology</b></dt>
+                    <dd></dd>
+                    <dt><b>DBMS</b></dt>
+                    <dd></dd>
+                    <dt><b>Problem Solving Skills</b></dt>
+                    <dd></dd>
+                </dl>
+                
+            </div>
+        </div>
+        
+        </div>
+    </div>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea><br><br>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    
+
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Thank you for contacting me!');
+        });
+    </script>
+</section>
+<footer>
+    <p>&copy; 2024 Mahendar Reddy Dundi</p>
+</footer>
+</body>
+</html>
